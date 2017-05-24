@@ -1,0 +1,8 @@
+D:\harri\Documents\SharpDevelop Projects\CameraViewT1\CameraViewT1\obj\Debug\CameraViewT1.csprojResolveAssemblyReference.cache
+D:\harri\Documents\SharpDevelop Projects\CameraViewT1\CameraViewT1\obj\Debug\CameraViewT1.MainForm.resources
+D:\harri\Documents\SharpDevelop Projects\CameraViewT1\CameraViewT1\obj\Debug\CameraViewT1.csproj.GenerateResource.Cache
+D:\harri\Documents\SharpDevelop Projects\CameraViewT1\CameraViewT1\bin\Debug\CameraViewT1.exe.config
+D:\harri\Documents\SharpDevelop Projects\CameraViewT1\CameraViewT1\bin\Debug\CameraViewT1.exe
+D:\harri\Documents\SharpDevelop Projects\CameraViewT1\CameraViewT1\bin\Debug\CameraViewT1.pdb
+D:\harri\Documents\SharpDevelop Projects\CameraViewT1\CameraViewT1\obj\Debug\CameraViewT1.exe
+D:\harri\Documents\SharpDevelop Projects\CameraViewT1\CameraViewT1\obj\Debug\CameraViewT1.pdb
