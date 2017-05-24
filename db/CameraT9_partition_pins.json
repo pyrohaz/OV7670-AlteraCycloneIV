@@ -1,0 +1,273 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "s_we",
+					"strict" : false
+				},
+				{
+					"name" : "s_cas",
+					"strict" : false
+				},
+				{
+					"name" : "s_ras",
+					"strict" : false
+				},
+				{
+					"name" : "s_addr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "s_addr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "s_addr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "s_addr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "s_addr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "s_addr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "s_addr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "s_addr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "s_addr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "s_addr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "s_addr[10]",
+					"strict" : false
+				},
+				{
+					"name" : "s_addr[11]",
+					"strict" : false
+				},
+				{
+					"name" : "s_addr[12]",
+					"strict" : false
+				},
+				{
+					"name" : "s_ba[0]",
+					"strict" : false
+				},
+				{
+					"name" : "s_ba[1]",
+					"strict" : false
+				},
+				{
+					"name" : "s_dq[0]",
+					"strict" : false
+				},
+				{
+					"name" : "s_dq[1]",
+					"strict" : false
+				},
+				{
+					"name" : "utx",
+					"strict" : false
+				},
+				{
+					"name" : "cxclk",
+					"strict" : false
+				},
+				{
+					"name" : "cnrst",
+					"strict" : false
+				},
+				{
+					"name" : "seg7en[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7en[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7en[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7en[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7c[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7c[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7c[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7c[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7c[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7c[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7c[6]",
+					"strict" : false
+				},
+				{
+					"name" : "s_d[0]",
+					"strict" : false
+				},
+				{
+					"name" : "s_d[1]",
+					"strict" : false
+				},
+				{
+					"name" : "s_d[2]",
+					"strict" : false
+				},
+				{
+					"name" : "s_d[3]",
+					"strict" : false
+				},
+				{
+					"name" : "s_d[4]",
+					"strict" : false
+				},
+				{
+					"name" : "s_d[5]",
+					"strict" : false
+				},
+				{
+					"name" : "s_d[6]",
+					"strict" : false
+				},
+				{
+					"name" : "s_d[7]",
+					"strict" : false
+				},
+				{
+					"name" : "s_d[8]",
+					"strict" : false
+				},
+				{
+					"name" : "s_d[9]",
+					"strict" : false
+				},
+				{
+					"name" : "s_d[10]",
+					"strict" : false
+				},
+				{
+					"name" : "s_d[11]",
+					"strict" : false
+				},
+				{
+					"name" : "s_d[12]",
+					"strict" : false
+				},
+				{
+					"name" : "s_d[13]",
+					"strict" : false
+				},
+				{
+					"name" : "s_d[14]",
+					"strict" : false
+				},
+				{
+					"name" : "s_d[15]",
+					"strict" : false
+				},
+				{
+					"name" : "cscl",
+					"strict" : false
+				},
+				{
+					"name" : "csda",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "nrst",
+					"strict" : false
+				},
+				{
+					"name" : "cpclk",
+					"strict" : false
+				},
+				{
+					"name" : "urx",
+					"strict" : false
+				},
+				{
+					"name" : "chs",
+					"strict" : false
+				},
+				{
+					"name" : "cvs",
+					"strict" : false
+				},
+				{
+					"name" : "cdi[0]",
+					"strict" : false
+				},
+				{
+					"name" : "cdi[1]",
+					"strict" : false
+				},
+				{
+					"name" : "cdi[2]",
+					"strict" : false
+				},
+				{
+					"name" : "cdi[3]",
+					"strict" : false
+				},
+				{
+					"name" : "cdi[4]",
+					"strict" : false
+				},
+				{
+					"name" : "cdi[5]",
+					"strict" : false
+				},
+				{
+					"name" : "cdi[6]",
+					"strict" : false
+				},
+				{
+					"name" : "cdi[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

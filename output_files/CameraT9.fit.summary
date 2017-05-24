@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed May 24 19:59:54 2017
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : CameraT9
+Top-level Entity Name : top
+Family : Cyclone IV E
+Device : EP4CE6E22C7
+Timing Models : Final
+Total logic elements : 1,040 / 6,272 ( 17 % )
+    Total combinational functions : 950 / 6,272 ( 15 % )
+    Dedicated logic registers : 482 / 6,272 ( 8 % )
+Total registers : 482
+Total pins : 70 / 92 ( 76 % )
+Total virtual pins : 0
+Total memory bits : 35,840 / 276,480 ( 13 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 1 / 2 ( 50 % )

@@ -1,0 +1,61 @@
+
+State Machine - |top|scbmodule:iscb|st
+Name st.SDONE st.SERROR st.WRREG2 st.WRREG1 st.RDVER2 st.RDVER1 st.IDELAY st.SOFTRST1B st.SOFTRST1A st.SDELAY 
+st.SDELAY 0 0 0 0 0 0 0 0 0 0 
+st.SOFTRST1A 0 0 0 0 0 0 0 0 1 1 
+st.SOFTRST1B 0 0 0 0 0 0 0 1 0 1 
+st.IDELAY 0 0 0 0 0 0 1 0 0 1 
+st.RDVER1 0 0 0 0 0 1 0 0 0 1 
+st.RDVER2 0 0 0 0 1 0 0 0 0 1 
+st.WRREG1 0 0 0 1 0 0 0 0 0 1 
+st.WRREG2 0 0 1 0 0 0 0 0 0 1 
+st.SERROR 0 1 0 0 0 0 0 0 0 1 
+st.SDONE 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |top|scbmodule:iscb|sccb:iss|st
+Name st.STOP2B st.STOP2A st.STOP1B st.STOP1A st.RDB1 st.WRADDR2 st.START2 st.WRB2 st.WRB1 st.WRADDR1 st.START1 st.IDLE 
+st.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 
+st.START1 0 0 0 0 0 0 0 0 0 0 1 1 
+st.WRADDR1 0 0 0 0 0 0 0 0 0 1 0 1 
+st.WRB1 0 0 0 0 0 0 0 0 1 0 0 1 
+st.WRB2 0 0 0 0 0 0 0 1 0 0 0 1 
+st.START2 0 0 0 0 0 0 1 0 0 0 0 1 
+st.WRADDR2 0 0 0 0 0 1 0 0 0 0 0 1 
+st.RDB1 0 0 0 0 1 0 0 0 0 0 0 1 
+st.STOP1A 0 0 0 1 0 0 0 0 0 0 0 1 
+st.STOP1B 0 0 1 0 0 0 0 0 0 0 0 1 
+st.STOP2A 0 1 0 0 0 0 0 0 0 0 0 1 
+st.STOP2B 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |top|uarthandler:iuh|st
+Name st.WRVAL2B st.WRVAL2A st.WRVAL1B st.WRVAL1A st.RDMEM2 st.RDMEM1 st.IDLE 
+st.IDLE 0 0 0 0 0 0 0 
+st.RDMEM1 0 0 0 0 0 1 1 
+st.RDMEM2 0 0 0 0 1 0 1 
+st.WRVAL1A 0 0 0 1 0 0 1 
+st.WRVAL1B 0 0 1 0 0 0 1 
+st.WRVAL2A 0 1 0 0 0 0 1 
+st.WRVAL2B 1 0 0 0 0 0 1 
+
+State Machine - |top|fifohandler:ifh|st
+Name st.RDUMEM2 st.RDUMEM1 st.WRPIXFIFO2 st.WRPIXFIFO1 st.IDLE 
+st.IDLE 0 0 0 0 0 
+st.WRPIXFIFO1 0 0 0 1 1 
+st.WRPIXFIFO2 0 0 1 0 1 
+st.RDUMEM1 0 1 0 0 1 
+st.RDUMEM2 1 0 0 0 1 
+
+State Machine - |top|sdramctrl:isc|st
+Name st.PRECHARGEACT st.PRECHARGE st.SREAD st.SWRITE st.ACTIVATE st.IDLE st.ARPRECHARGE st.AUTOREFRESH st.INITMODE st.INITREFR st.INITPRE st.INITWAIT 
+st.INITWAIT 0 0 0 0 0 0 0 0 0 0 0 0 
+st.INITPRE 0 0 0 0 0 0 0 0 0 0 1 1 
+st.INITREFR 0 0 0 0 0 0 0 0 0 1 0 1 
+st.INITMODE 0 0 0 0 0 0 0 0 1 0 0 1 
+st.AUTOREFRESH 0 0 0 0 0 0 0 1 0 0 0 1 
+st.ARPRECHARGE 0 0 0 0 0 0 1 0 0 0 0 1 
+st.IDLE 0 0 0 0 0 1 0 0 0 0 0 1 
+st.ACTIVATE 0 0 0 0 1 0 0 0 0 0 0 1 
+st.SWRITE 0 0 0 1 0 0 0 0 0 0 0 1 
+st.SREAD 0 0 1 0 0 0 0 0 0 0 0 1 
+st.PRECHARGE 0 1 0 0 0 0 0 0 0 0 0 1 
+st.PRECHARGEACT 1 0 0 0 0 0 0 0 0 0 0 1 

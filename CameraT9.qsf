@@ -1,0 +1,153 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2017  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Intel and sold by Intel or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+# Date created = 14:23:39  May 22, 2017
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		CameraT9_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE6E22C7
+set_global_assignment -name TOP_LEVEL_ENTITY top
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:23:39  MAY 22, 2017"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.0.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_24 -to clk
+set_location_assignment PIN_89 -to nrst
+set_location_assignment PIN_77 -to s_addr[0]
+set_location_assignment PIN_80 -to s_addr[1]
+set_location_assignment PIN_83 -to s_addr[2]
+set_location_assignment PIN_84 -to s_addr[3]
+set_location_assignment PIN_72 -to s_addr[4]
+set_location_assignment PIN_71 -to s_addr[5]
+set_location_assignment PIN_70 -to s_addr[6]
+set_location_assignment PIN_69 -to s_addr[7]
+set_location_assignment PIN_68 -to s_addr[8]
+set_location_assignment PIN_67 -to s_addr[9]
+set_location_assignment PIN_76 -to s_addr[10]
+set_location_assignment PIN_66 -to s_addr[11]
+set_location_assignment PIN_65 -to s_addr[12]
+set_location_assignment PIN_73 -to s_ba[0]
+set_location_assignment PIN_75 -to s_ba[1]
+set_location_assignment PIN_44 -to s_cas
+set_location_assignment PIN_64 -to s_cke
+set_location_assignment PIN_60 -to s_clk
+set_location_assignment PIN_74 -to s_cs
+set_location_assignment PIN_30 -to s_d[0]
+set_location_assignment PIN_28 -to s_d[1]
+set_location_assignment PIN_32 -to s_d[2]
+set_location_assignment PIN_31 -to s_d[3]
+set_location_assignment PIN_33 -to s_d[4]
+set_location_assignment PIN_34 -to s_d[5]
+set_location_assignment PIN_38 -to s_d[6]
+set_location_assignment PIN_39 -to s_d[7]
+set_location_assignment PIN_58 -to s_d[8]
+set_location_assignment PIN_55 -to s_d[9]
+set_location_assignment PIN_54 -to s_d[10]
+set_location_assignment PIN_53 -to s_d[11]
+set_location_assignment PIN_52 -to s_d[12]
+set_location_assignment PIN_51 -to s_d[13]
+set_location_assignment PIN_50 -to s_d[14]
+set_location_assignment PIN_49 -to s_d[15]
+set_location_assignment PIN_42 -to s_dq[0]
+set_location_assignment PIN_59 -to s_dq[1]
+set_location_assignment PIN_46 -to s_ras
+set_location_assignment PIN_43 -to s_we
+set_location_assignment PIN_87 -to urx
+set_location_assignment PIN_86 -to utx
+set_location_assignment PIN_111 -to cdi[7]
+set_location_assignment PIN_112 -to cdi[6]
+set_location_assignment PIN_115 -to cdi[5]
+set_location_assignment PIN_110 -to cdi[4]
+set_location_assignment PIN_113 -to cdi[3]
+set_location_assignment PIN_114 -to cdi[2]
+set_location_assignment PIN_120 -to cdi[1]
+set_location_assignment PIN_119 -to cdi[0]
+set_location_assignment PIN_103 -to chs
+set_location_assignment PIN_104 -to cpclk
+set_location_assignment PIN_101 -to cscl
+set_location_assignment PIN_100 -to csda
+set_location_assignment PIN_105 -to cvs
+set_location_assignment PIN_106 -to cxclk
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "PASSIVE SERIAL"
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_location_assignment PIN_124 -to cnrst
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to csda
+set_location_assignment PIN_126 -to done
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to cscl
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to cnrst
+set_global_assignment -name VHDL_FILE ovcapture.vhd
+set_global_assignment -name VHDL_FILE sccb.vhd
+set_global_assignment -name VHDL_FILE scbmodule.vhd
+set_global_assignment -name VHDL_FILE i2cmaster.vhd
+set_global_assignment -name VHDL_FILE rsthandler.vhd
+set_global_assignment -name VHDL_FILE scbctrl.vhd
+set_global_assignment -name VHDL_FILE scb.vhd
+set_global_assignment -name VHDL_FILE pixcapture.vhd
+set_global_assignment -name VHDL_FILE uarthandler.vhd
+set_global_assignment -name VHDL_FILE uart2.vhd
+set_global_assignment -name VHDL_FILE top.vhd
+set_global_assignment -name VHDL_FILE sdramctrl.vhd
+set_global_assignment -name VHDL_FILE fifohandler.vhd
+set_global_assignment -name VHDL_FILE pixwriter.vhd
+set_global_assignment -name QIP_FILE pixfifo.qip
+set_global_assignment -name QIP_FILE pll.qip
+set_location_assignment PIN_2 -to seg7c[6]
+set_location_assignment PIN_138 -to seg7c[5]
+set_location_assignment PIN_142 -to seg7c[4]
+set_location_assignment PIN_141 -to seg7c[3]
+set_location_assignment PIN_1 -to seg7c[2]
+set_location_assignment PIN_144 -to seg7c[1]
+set_location_assignment PIN_143 -to seg7c[0]
+set_location_assignment PIN_137 -to seg7en[3]
+set_location_assignment PIN_135 -to seg7en[2]
+set_location_assignment PIN_136 -to seg7en[1]
+set_location_assignment PIN_133 -to seg7en[0]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
