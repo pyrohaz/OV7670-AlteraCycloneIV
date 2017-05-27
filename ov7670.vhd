@@ -32,19 +32,21 @@ begin
             do <= (others => '0');
         elsif(rising_edge(xclk)) then
             if(xc = 330*2-1) then
-                xc <= (others => '0');
                 if(yc = 242-1) then
                     yc <= (others => '0');
                     pcnt <= (others => '0');
                 else
                     yc <= yc + 1;
                 end if;
+                xc <= (others => '0');  
             else
                 xc <= xc + 1;
             end if;
             
             if(xc(0) = '1' and xc<320*2 and yc<240) then
-                pcnt <= pcnt + 1;
+                --pcnt <= pcnt + 100;
+                if(xc*2<yc) then pcnt <= (others => '0');
+                else pcnt <= (others => '1'); end if;
             end if;
         elsif(falling_edge(xclk)) then
             if(xc(0) = '0') then

@@ -43,14 +43,15 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity fifohandler
 -- Compiling architecture rtl of fifohandler
 
-} {} {}} D:/FPGAProjects/CameraT9/uarthandler.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/FPGAProjects/CameraT9/uarthandler.vhd
+} {} {}} D:/FPGAProjects/CameraT9/sccb.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/FPGAProjects/CameraT9/sccb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Compiling entity uarthandler
--- Compiling architecture rtl of uarthandler
+-- Loading package MATH_REAL
+-- Compiling entity sccb
+-- Compiling architecture rtl of sccb
 
 } {} {}} D:/FPGAProjects/CameraT9/uart2.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/FPGAProjects/CameraT9/uart2.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -88,23 +89,17 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity ov7670
 -- Compiling architecture rtl of ov7670
 
-} {} {}} D:/FPGAProjects/CameraT9/top.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/FPGAProjects/CameraT9/top.vhd
+} {} {}} D:/FPGAProjects/CameraT9/ovtb.vhd {2 {vcom -work work -2002 -explicit -stats=none D:/FPGAProjects/CameraT9/ovtb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Compiling entity top
--- Compiling architecture rtl of top
-
-} {} {}} D:/FPGAProjects/CameraT9/ovtb.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/FPGAProjects/CameraT9/ovtb.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
 -- Compiling entity ovtb
 -- Compiling architecture rtl of ovtb
+** Warning: D:/FPGAProjects/CameraT9/ovtb.vhd(102): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+** Warning: D:/FPGAProjects/CameraT9/ovtb.vhd(117): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
 
 } {} {}} D:/FPGAProjects/CameraT9/sdramctrl.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/FPGAProjects/CameraT9/sdramctrl.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -115,14 +110,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity sdramctrl
 -- Compiling architecture rtl of sdramctrl
 
-} {} {}} D:/FPGAProjects/CameraT9/pixfifo.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/FPGAProjects/CameraT9/pixfifo.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity pixfifo
--- Compiling architecture SYN of pixfifo
-
 } {} {}} D:/FPGAProjects/CameraT9/scbctrl.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/FPGAProjects/CameraT9/scbctrl.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -132,14 +119,22 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity scbctrl
 -- Compiling architecture rtl of scbctrl
 
-} {} {}} D:/FPGAProjects/CameraT9/pixwriter.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/FPGAProjects/CameraT9/pixwriter.vhd
+} {} {}} D:/FPGAProjects/CameraT9/pixfifo.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/FPGAProjects/CameraT9/pixfifo.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity pixfifo
+-- Compiling architecture SYN of pixfifo
+
+} {} {}} D:/FPGAProjects/CameraT9/scbmodule.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/FPGAProjects/CameraT9/scbmodule.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Compiling entity pixwriter
--- Compiling architecture rtl of pixwriter
+-- Compiling entity scbmodule
+-- Compiling architecture rtl of scbmodule
 
 } {} {}} D:/FPGAProjects/CameraT9/tb.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/FPGAProjects/CameraT9/tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -149,5 +144,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package NUMERIC_STD
 -- Compiling entity tb
 -- Compiling architecture rtl of tb
+
+} {} {}} D:/FPGAProjects/CameraT9/pixwriter.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/FPGAProjects/CameraT9/pixwriter.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity pixwriter
+-- Compiling architecture rtl of pixwriter
 
 } {} {}}

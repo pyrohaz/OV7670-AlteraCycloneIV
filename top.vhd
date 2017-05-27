@@ -179,6 +179,34 @@ architecture rtl of top is
         );
     end component;
     
+    component imgrcedge is
+    port(
+        clk, nrst:  in std_logic;
+        
+        newframe:   in std_logic;
+        pix:        in std_logic_vector(7 downto 0);
+        pixrdy:     in std_logic;
+        
+        fifodo:     out std_logic_vector(34 downto 0);
+        fifowr:     out std_logic;
+        fifofull:   in std_logic
+    );
+    end component;
+    
+    component imgprekernel is
+    port(
+        clk, nrst:  in std_logic;
+        
+        newframe:   in std_logic;
+        pixi:       in std_logic_vector(15 downto 0);
+        pixirdy:    in std_logic;
+        pixo:       out std_logic_vector(7 downto 0);
+        pixordy:    out std_logic;
+        
+        done:       out std_logic
+    );
+    end component;
+    
     signal pllclk: std_logic;
     signal nrsti: std_logic;
     
@@ -198,6 +226,14 @@ architecture rtl of top is
     
     signal psc: unsigned(1 downto 0);
     signal rseg: std_logic_vector(15 downto 0);
+    
+    signal newframe: std_logic;
+    signal vssync: std_logic_vector(1 downto 0);
+    
+    signal prekpixo: std_logic_vector(7 downto 0);
+    signal prekpixordy: std_logic;
+    signal captfdo: std_logic_vector(34 downto 0);
+    signal captfwr: std_logic;
 begin
     cxclk <= psc(1);
     
@@ -213,12 +249,16 @@ begin
     --cnrst <= '0' when nrsti = '0' else 'Z';
     cnrst <= nrsti;
     
+    newframe <= vssync(1);
+    
     process(clk, nrsti)
     begin
         if(nrsti = '0') then
             psc <= "00";
+            vssync <= "00";
         elsif(rising_edge(clk)) then
             psc <= psc + 1;
+            vssync <= vssync(0) & cvs;
         end if;
     end process;
 
@@ -335,8 +375,10 @@ begin
         vs => cvs,
         hs => chs,
         
-        fifodo => pixfdi,
-        fifowr => pixfwr,
+        --fifodo => pixfdi,
+        --fifowr => pixfwr,
+        fifodo => captfdo,
+        fifowr => captfwr,
         fifofull => pixffull
     );
     
@@ -348,6 +390,36 @@ begin
     --    sda => csda,
     --    done => camrdy
     --);
+    
+    ipk: imgprekernel
+    port map(
+        clk => pllclk,
+        nrst => nrsti,
+        
+        newframe => newframe,
+        
+        pixi => captfdo(15 downto 0),
+        pixirdy => captfwr,
+        pixo => prekpixo,
+        pixordy => prekpixordy
+    );
+    
+    irc: imgrcedge
+    port map(
+        clk => pllclk,
+        nrst => nrsti,
+        
+        newframe => newframe,
+        pix => prekpixo,
+        pixrdy => prekpixordy,
+        
+        --fifodo => pixfdi,
+        --fifowr => pixfwr,
+        fifofull => pixffull
+    );
+    
+    pixfdi <= captfdo;
+    pixfwr <= captfwr;
     
     iscb: scbmodule
     port map(

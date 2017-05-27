@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CameraT9
-Wed May 24 19:59:42 2017
+Sat May 27 03:33:20 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -34,11 +34,13 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
  26. Port Connectivity Checks: "seg7:iseg7"
  27. Port Connectivity Checks: "scbmodule:iscb|sccb:iss"
  28. Port Connectivity Checks: "scbmodule:iscb"
- 29. Port Connectivity Checks: "uarthandler:iuh|uart2:iu"
- 30. Port Connectivity Checks: "pll:ipll"
- 31. Post-Synthesis Netlist Statistics for Top Partition
- 32. Elapsed Time Per Partition
- 33. Analysis & Synthesis Messages
+ 29. Port Connectivity Checks: "imgrcedge:irc"
+ 30. Port Connectivity Checks: "imgprekernel:ipk"
+ 31. Port Connectivity Checks: "uarthandler:iuh|uart2:iu"
+ 32. Port Connectivity Checks: "pll:ipll"
+ 33. Post-Synthesis Netlist Statistics for Top Partition
+ 34. Elapsed Time Per Partition
+ 35. Analysis & Synthesis Messages
 
 
 
@@ -65,7 +67,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed May 24 19:59:42 2017       ;
+; Analysis & Synthesis Status        ; Successful - Sat May 27 03:33:20 2017       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; CameraT9                                    ;
 ; Top-level Entity Name              ; top                                         ;
@@ -181,7 +183,7 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
@@ -192,6 +194,8 @@ agreement for further details.
 +----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                             ; Library ;
 +----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------+---------+
+; imgrcedge.vhd                    ; yes             ; User VHDL File               ; D:/FPGAProjects/CameraT9/imgrcedge.vhd                                   ;         ;
+; imgprekernel.vhd                 ; yes             ; User VHDL File               ; D:/FPGAProjects/CameraT9/imgprekernel.vhd                                ;         ;
 ; ovcapture.vhd                    ; yes             ; User VHDL File               ; D:/FPGAProjects/CameraT9/ovcapture.vhd                                   ;         ;
 ; sccb.vhd                         ; yes             ; User VHDL File               ; D:/FPGAProjects/CameraT9/sccb.vhd                                        ;         ;
 ; scbmodule.vhd                    ; yes             ; User VHDL File               ; D:/FPGAProjects/CameraT9/scbmodule.vhd                                   ;         ;
@@ -996,6 +1000,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+-------------------------------------------------------------------------------------+
 
 
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "imgrcedge:irc"                                                                        ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; fifodo ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; fifowr ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "imgprekernel:ipk"                                                                   ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; done ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +----------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "uarthandler:iuh|uart2:iu"                                                           ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -1067,10 +1090,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Wed May 24 19:59:19 2017
+    Info: Processing started: Sat May 27 03:33:01 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CameraT9 -c CameraT9
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file imgrcedge.vhd
+    Info (12022): Found design unit 1: imgrcedge-rtl File: D:/FPGAProjects/CameraT9/imgrcedge.vhd Line: 19
+    Info (12023): Found entity 1: imgrcedge File: D:/FPGAProjects/CameraT9/imgrcedge.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file imgprekernel.vhd
+    Info (12022): Found design unit 1: imgprekernel-rtl File: D:/FPGAProjects/CameraT9/imgprekernel.vhd Line: 19
+    Info (12023): Found entity 1: imgprekernel File: D:/FPGAProjects/CameraT9/imgprekernel.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ovcapture.vhd
     Info (12022): Found design unit 1: ovcapture-rtl File: D:/FPGAProjects/CameraT9/ovcapture.vhd Line: 19
     Info (12023): Found entity 1: ovcapture File: D:/FPGAProjects/CameraT9/ovcapture.vhd Line: 5
@@ -1116,9 +1145,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file pll.vhd
     Info (12022): Found design unit 1: pll-SYN File: D:/FPGAProjects/CameraT9/pll.vhd Line: 54
     Info (12023): Found entity 1: pll File: D:/FPGAProjects/CameraT9/pll.vhd Line: 43
 Info (12127): Elaborating entity "top" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at top.vhd(197): object "camrdy" assigned a value but never read File: D:/FPGAProjects/CameraT9/top.vhd Line: 197
-Info (12128): Elaborating entity "rsthandler" for hierarchy "rsthandler:irh" File: D:/FPGAProjects/CameraT9/top.vhd Line: 206
-Info (12128): Elaborating entity "pll" for hierarchy "pll:ipll" File: D:/FPGAProjects/CameraT9/top.vhd Line: 225
+Warning (10036): Verilog HDL or VHDL warning at top.vhd(225): object "camrdy" assigned a value but never read File: D:/FPGAProjects/CameraT9/top.vhd Line: 225
+Info (12128): Elaborating entity "rsthandler" for hierarchy "rsthandler:irh" File: D:/FPGAProjects/CameraT9/top.vhd Line: 242
+Info (12128): Elaborating entity "pll" for hierarchy "pll:ipll" File: D:/FPGAProjects/CameraT9/top.vhd Line: 265
 Info (12128): Elaborating entity "altpll" for hierarchy "pll:ipll|altpll:altpll_component" File: D:/FPGAProjects/CameraT9/pll.vhd Line: 141
 Info (12130): Elaborated megafunction instantiation "pll:ipll|altpll:altpll_component" File: D:/FPGAProjects/CameraT9/pll.vhd Line: 141
 Info (12133): Instantiated megafunction "pll:ipll|altpll:altpll_component" with the following parameter: File: D:/FPGAProjects/CameraT9/pll.vhd Line: 141
@@ -1180,9 +1209,9 @@ Info (12133): Instantiated megafunction "pll:ipll|altpll:altpll_component" with 
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll_altpll.v
     Info (12023): Found entity 1: pll_altpll File: D:/FPGAProjects/CameraT9/db/pll_altpll.v Line: 31
 Info (12128): Elaborating entity "pll_altpll" for hierarchy "pll:ipll|altpll:altpll_component|pll_altpll:auto_generated" File: d:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Info (12128): Elaborating entity "sdramctrl" for hierarchy "sdramctrl:isc" File: D:/FPGAProjects/CameraT9/top.vhd Line: 231
-Info (12128): Elaborating entity "fifohandler" for hierarchy "fifohandler:ifh" File: D:/FPGAProjects/CameraT9/top.vhd Line: 256
-Info (12128): Elaborating entity "pixfifo" for hierarchy "pixfifo:ipf" File: D:/FPGAProjects/CameraT9/top.vhd Line: 279
+Info (12128): Elaborating entity "sdramctrl" for hierarchy "sdramctrl:isc" File: D:/FPGAProjects/CameraT9/top.vhd Line: 271
+Info (12128): Elaborating entity "fifohandler" for hierarchy "fifohandler:ifh" File: D:/FPGAProjects/CameraT9/top.vhd Line: 296
+Info (12128): Elaborating entity "pixfifo" for hierarchy "pixfifo:ipf" File: D:/FPGAProjects/CameraT9/top.vhd Line: 319
 Info (12128): Elaborating entity "scfifo" for hierarchy "pixfifo:ipf|scfifo:scfifo_component" File: D:/FPGAProjects/CameraT9/pixfifo.vhd Line: 98
 Info (12130): Elaborated megafunction instantiation "pixfifo:ipf|scfifo:scfifo_component" File: D:/FPGAProjects/CameraT9/pixfifo.vhd Line: 98
 Info (12133): Instantiated megafunction "pixfifo:ipf|scfifo:scfifo_component" with the following parameter: File: D:/FPGAProjects/CameraT9/pixfifo.vhd Line: 98
@@ -1214,21 +1243,23 @@ Info (12128): Elaborating entity "altsyncram_2tm1" for hierarchy "pixfifo:ipf|sc
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_cpb.tdf
     Info (12023): Found entity 1: cntr_cpb File: D:/FPGAProjects/CameraT9/db/cntr_cpb.tdf Line: 26
 Info (12128): Elaborating entity "cntr_cpb" for hierarchy "pixfifo:ipf|scfifo:scfifo_component|scfifo_gq31:auto_generated|a_dpfifo_n041:dpfifo|cntr_cpb:rd_ptr_count" File: D:/FPGAProjects/CameraT9/db/a_dpfifo_n041.tdf Line: 44
-Info (12128): Elaborating entity "uarthandler" for hierarchy "uarthandler:iuh" File: D:/FPGAProjects/CameraT9/top.vhd Line: 304
+Info (12128): Elaborating entity "uarthandler" for hierarchy "uarthandler:iuh" File: D:/FPGAProjects/CameraT9/top.vhd Line: 344
 Info (12128): Elaborating entity "uart2" for hierarchy "uarthandler:iuh|uart2:iu" File: D:/FPGAProjects/CameraT9/uarthandler.vhd Line: 57
-Info (12128): Elaborating entity "ovcapture" for hierarchy "ovcapture:ioc" File: D:/FPGAProjects/CameraT9/top.vhd Line: 328
+Info (12128): Elaborating entity "ovcapture" for hierarchy "ovcapture:ioc" File: D:/FPGAProjects/CameraT9/top.vhd Line: 368
 Warning (10036): Verilog HDL or VHDL warning at ovcapture.vhd(22): object "pixl" assigned a value but never read File: D:/FPGAProjects/CameraT9/ovcapture.vhd Line: 22
 Warning (10492): VHDL Process Statement warning at ovcapture.vhd(95): signal "pixh" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/FPGAProjects/CameraT9/ovcapture.vhd Line: 95
 Warning (10492): VHDL Process Statement warning at ovcapture.vhd(95): signal "ds2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/FPGAProjects/CameraT9/ovcapture.vhd Line: 95
 Warning (10492): VHDL Process Statement warning at ovcapture.vhd(96): signal "fifofull" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/FPGAProjects/CameraT9/ovcapture.vhd Line: 96
-Info (12128): Elaborating entity "scbmodule" for hierarchy "scbmodule:iscb" File: D:/FPGAProjects/CameraT9/top.vhd Line: 352
+Info (12128): Elaborating entity "imgprekernel" for hierarchy "imgprekernel:ipk" File: D:/FPGAProjects/CameraT9/top.vhd Line: 394
+Info (12128): Elaborating entity "imgrcedge" for hierarchy "imgrcedge:irc" File: D:/FPGAProjects/CameraT9/top.vhd Line: 407
+Info (12128): Elaborating entity "scbmodule" for hierarchy "scbmodule:iscb" File: D:/FPGAProjects/CameraT9/top.vhd Line: 424
 Info (12128): Elaborating entity "sccb" for hierarchy "scbmodule:iscb|sccb:iss" File: D:/FPGAProjects/CameraT9/scbmodule.vhd Line: 77
 Warning (10492): VHDL Process Statement warning at sccb.vhd(174): signal "iwr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/FPGAProjects/CameraT9/sccb.vhd Line: 174
 Warning (10492): VHDL Process Statement warning at sccb.vhd(219): signal "iwr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/FPGAProjects/CameraT9/sccb.vhd Line: 219
 Warning (12125): Using design file seg7.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: seg7-rtl File: D:/FPGAProjects/CameraT9/seg7.vhd Line: 15
     Info (12023): Found entity 1: seg7 File: D:/FPGAProjects/CameraT9/seg7.vhd Line: 5
-Info (12128): Elaborating entity "seg7" for hierarchy "seg7:iseg7" File: D:/FPGAProjects/CameraT9/top.vhd Line: 361
+Info (12128): Elaborating entity "seg7" for hierarchy "seg7:iseg7" File: D:/FPGAProjects/CameraT9/top.vhd Line: 433
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13050): Open-drain buffer(s) that do not directly drive top-level pin(s) are removed
     Warning (13051): Converted the fanout from the open-drain buffer "scbmodule:iscb|sccb:iss|iscl" to the node "scbmodule:iscb|sccb:iss|scl" into a wire File: D:/FPGAProjects/CameraT9/sccb.vhd Line: 52
@@ -1248,9 +1279,9 @@ Info (21057): Implemented 1191 device resources after synthesis - the final reso
     Info (21064): Implemented 35 RAM segments
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 685 megabytes
-    Info: Processing ended: Wed May 24 19:59:42 2017
-    Info: Elapsed time: 00:00:23
-    Info: Total CPU time (on all processors): 00:00:35
+    Info: Peak virtual memory: 705 megabytes
+    Info: Processing ended: Sat May 27 03:33:20 2017
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:34
 
 

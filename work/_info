@@ -22,9 +22,9 @@ VM9KS3j0a8ElIFA=G1]Mni1
 !s100 =O4b_<IE2kL3gG]=a]ARQ3
 Z7 OV;C;10.5b;63
 32
-Z8 !s110 1495643729
+Z8 !s110 1495849990
 !i10b 1
-Z9 !s108 1495643729.000000
+Z9 !s108 1495849990.000000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/fifohandler.vhd|
 Z11 !s107 D:/FPGAProjects/CameraT9/fifohandler.vhd|
 !i113 1
@@ -92,25 +92,25 @@ R21
 !i113 1
 R12
 R13
-Eov7670
-Z22 w1495588853
+Eimgprekernel
+Z22 w1495850159
 R1
 R2
 R3
 R4
-Z23 8D:/FPGAProjects/CameraT9/ov7670.vhd
-Z24 FD:/FPGAProjects/CameraT9/ov7670.vhd
+Z23 8D:/FPGAProjects/CameraT9/imgprekernel.vhd
+Z24 FD:/FPGAProjects/CameraT9/imgprekernel.vhd
 l0
 L5
-V[T1ZIF^@3e7_e89^Q;<kG0
-!s100 eQYNhVjZ[bk7NJ<I25[3`3
+V7fCPd47D9GV]>k>NzV@>^1
+!s100 5b>8gQ^J0Xa[K2M`eg@FP3
 R7
 32
-R8
+Z25 !s110 1495850162
 !i10b 1
-R9
-Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/ov7670.vhd|
-Z26 !s107 D:/FPGAProjects/CameraT9/ov7670.vhd|
+Z26 !s108 1495850162.000000
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/imgprekernel.vhd|
+Z28 !s107 D:/FPGAProjects/CameraT9/imgprekernel.vhd|
 !i113 1
 R12
 R13
@@ -118,18 +118,100 @@ Artl
 R1
 R2
 R3
-DEx4 work 6 ov7670 0 22 [T1ZIF^@3e7_e89^Q;<kG0
-l18
-L15
-VJU:J_3c1hBK0kT6a`@H[m1
-!s100 D[NQm]^d@5ezaS^mPSjVY1
+DEx4 work 12 imgprekernel 0 22 7fCPd47D9GV]>k>NzV@>^1
+l26
+L19
+VPe^7m1<IWP``;;S8a_eUd1
+!s100 d`IFP^i:TQo8eCihoP:R`0
 R7
 32
-R8
-!i10b 1
-R9
 R25
+!i10b 1
 R26
+R27
+R28
+!i113 1
+R12
+R13
+Eimgrcedge
+Z29 w1495850156
+R1
+R2
+R3
+R4
+Z30 8D:/FPGAProjects/CameraT9/imgrcedge.vhd
+Z31 FD:/FPGAProjects/CameraT9/imgrcedge.vhd
+l0
+L5
+VjaQS`l7NfGPd926[ni8I]2
+!s100 d4c8U4[:5MIMQ@=Ob_5gg0
+R7
+32
+R25
+!i10b 1
+R26
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/imgrcedge.vhd|
+Z33 !s107 D:/FPGAProjects/CameraT9/imgrcedge.vhd|
+!i113 1
+R12
+R13
+Artl
+R1
+R2
+R3
+DEx4 work 9 imgrcedge 0 22 jaQS`l7NfGPd926[ni8I]2
+l36
+L19
+VYZiNd<[]zI_kbU6HYbHiF3
+!s100 `A3dz2@Q_eIRj=L>_C:BD3
+R7
+32
+R25
+!i10b 1
+R26
+R32
+R33
+!i113 1
+R12
+R13
+Eov7670
+Z34 w1495850237
+R1
+R2
+R3
+R4
+Z35 8D:/FPGAProjects/CameraT9/ov7670.vhd
+Z36 FD:/FPGAProjects/CameraT9/ov7670.vhd
+l0
+L5
+V[T1ZIF^@3e7_e89^Q;<kG0
+!s100 eQYNhVjZ[bk7NJ<I25[3`3
+R7
+32
+Z37 !s110 1495850239
+!i10b 1
+Z38 !s108 1495850239.000000
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/ov7670.vhd|
+Z40 !s107 D:/FPGAProjects/CameraT9/ov7670.vhd|
+!i113 1
+R12
+R13
+Artl
+R1
+R2
+R3
+Z41 DEx4 work 6 ov7670 0 22 [T1ZIF^@3e7_e89^Q;<kG0
+l18
+L15
+VE]Y^z5O]?i30;`6lH>X1J0
+!s100 j5I68:9Kcg`Um3995==E:2
+R7
+32
+R37
+!i10b 1
+R38
+R39
+R40
 !i113 1
 R12
 R13
@@ -156,13 +238,13 @@ R7
 R12
 R13
 Eovcapture
-Z27 w1495623725
+Z42 w1495623725
 R1
 R2
 R3
 R4
-Z28 8D:/FPGAProjects/CameraT9/ovcapture.vhd
-Z29 FD:/FPGAProjects/CameraT9/ovcapture.vhd
+Z43 8D:/FPGAProjects/CameraT9/ovcapture.vhd
+Z44 FD:/FPGAProjects/CameraT9/ovcapture.vhd
 l0
 L5
 VH:dgNGI2O3eFSzGfL^:=J2
@@ -172,8 +254,8 @@ R7
 R8
 !i10b 1
 R9
-Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/ovcapture.vhd|
-Z31 !s107 D:/FPGAProjects/CameraT9/ovcapture.vhd|
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/ovcapture.vhd|
+Z46 !s107 D:/FPGAProjects/CameraT9/ovcapture.vhd|
 !i113 1
 R12
 R13
@@ -191,71 +273,73 @@ R7
 R8
 !i10b 1
 R9
-R30
-R31
+R45
+R46
 !i113 1
 R12
 R13
 Eovtb
-Z32 w1495586686
+Z47 w1495848498
+Z48 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
 R1
 R2
 R3
 R4
-Z33 8D:/FPGAProjects/CameraT9/ovtb.vhd
-Z34 FD:/FPGAProjects/CameraT9/ovtb.vhd
+Z49 8D:/FPGAProjects/CameraT9/ovtb.vhd
+Z50 FD:/FPGAProjects/CameraT9/ovtb.vhd
 l0
-L5
-V9djR<[PnO>1b=9M7VDROi2
-!s100 DcCPm=YUBH3VN0aX8NPEG1
+L7
+Vjm4HRUAn1FYWHRcWilHAD0
+!s100 J[AG7j`OaLm@K[OjNePM81
 R7
 32
 R8
 !i10b 1
 R9
-Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/ovtb.vhd|
-Z36 !s107 D:/FPGAProjects/CameraT9/ovtb.vhd|
+Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/ovtb.vhd|
+Z52 !s107 D:/FPGAProjects/CameraT9/ovtb.vhd|
 !i113 1
 R12
 R13
 Artl
+R48
 R1
 R2
 R3
-DEx4 work 4 ovtb 0 22 9djR<[PnO>1b=9M7VDROi2
-l40
-L8
-Ve3Fj@KChzc:8fkT^eA[2l3
-!s100 LV?42QRcf]Rb1G9SXoBb11
+DEx4 work 4 ovtb 0 22 jm4HRUAn1FYWHRcWilHAD0
+l76
+L10
+V;K7n9kfePbONL2;JhcNTB1
+!s100 ]1E2:>:@8mQF6;2YeL3Pm3
 R7
 32
 R8
 !i10b 1
 R9
-R35
-R36
+R51
+R52
 !i113 1
 R12
 R13
 Epixcapture
-Z37 w1495581844
+Z53 w1495581844
 R3
 R2
 R1
 R4
-Z38 8D:/FPGAProjects/CameraT9/pixcapture.vhd
-Z39 FD:/FPGAProjects/CameraT9/pixcapture.vhd
+Z54 8D:/FPGAProjects/CameraT9/pixcapture.vhd
+Z55 FD:/FPGAProjects/CameraT9/pixcapture.vhd
 l0
 L5
 VF@@k>0i>6ICOYIn`6OTSK0
 !s100 BBAofn0<Z[h7ZTlhhmkdD2
 R7
 32
-Z40 !s110 1495589739
+Z56 !s110 1495589739
 !i10b 1
-Z41 !s108 1495589739.000000
-Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/pixcapture.vhd|
-Z43 !s107 D:/FPGAProjects/CameraT9/pixcapture.vhd|
+Z57 !s108 1495589739.000000
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/pixcapture.vhd|
+Z59 !s107 D:/FPGAProjects/CameraT9/pixcapture.vhd|
 !i113 1
 R12
 R13
@@ -270,21 +354,21 @@ V9C8Y>kUT:Z7FL9eI?[R_C0
 !s100 nRY?QfR@R@kIfC_XZQji93
 R7
 32
-R40
+R56
 !i10b 1
-R41
-R42
-R43
+R57
+R58
+R59
 !i113 1
 R12
 R13
 Epixfifo
-Z44 w1495624938
+Z60 w1495624938
 R2
 R1
 R4
-Z45 8D:/FPGAProjects/CameraT9/pixfifo.vhd
-Z46 FD:/FPGAProjects/CameraT9/pixfifo.vhd
+Z61 8D:/FPGAProjects/CameraT9/pixfifo.vhd
+Z62 FD:/FPGAProjects/CameraT9/pixfifo.vhd
 l0
 L43
 V54VLC3[ThD6AbXJ16^[AM0
@@ -294,8 +378,8 @@ R7
 R8
 !i10b 1
 R9
-Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/pixfifo.vhd|
-Z48 !s107 D:/FPGAProjects/CameraT9/pixfifo.vhd|
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/pixfifo.vhd|
+Z64 !s107 D:/FPGAProjects/CameraT9/pixfifo.vhd|
 !i113 1
 R12
 R13
@@ -312,30 +396,30 @@ R7
 R8
 !i10b 1
 R9
-R47
-R48
+R63
+R64
 !i113 1
 R12
 R13
 Epixwriter
-Z49 w1495482142
+Z65 w1495482142
 R1
 R2
 R3
 R4
-Z50 8D:/FPGAProjects/CameraT9/pixwriter.vhd
-Z51 FD:/FPGAProjects/CameraT9/pixwriter.vhd
+Z66 8D:/FPGAProjects/CameraT9/pixwriter.vhd
+Z67 FD:/FPGAProjects/CameraT9/pixwriter.vhd
 l0
 L5
 VHlIKJG;FdKMcIO0b]FbNf2
 !s100 1?U`f@k;>`oETDkUz1EdC1
 R7
 32
-Z52 !s110 1495643730
+Z68 !s110 1495849991
 !i10b 1
-Z53 !s108 1495643730.000000
-Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/pixwriter.vhd|
-Z55 !s107 D:/FPGAProjects/CameraT9/pixwriter.vhd|
+Z69 !s108 1495849991.000000
+Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/pixwriter.vhd|
+Z71 !s107 D:/FPGAProjects/CameraT9/pixwriter.vhd|
 !i113 1
 R12
 R13
@@ -350,32 +434,32 @@ VA]D@9<R_]21iLQUoZ9cKY0
 !s100 i3;OZ:Ngh<[Q1DlWbDU8m3
 R7
 32
-R52
+R68
 !i10b 1
-R53
-R54
-R55
+R69
+R70
+R71
 !i113 1
 R12
 R13
 Epll
-Z56 w1495461896
+Z72 w1495461896
 R2
 R1
 R4
-Z57 8D:/FPGAProjects/CameraT9/pll.vhd
-Z58 FD:/FPGAProjects/CameraT9/pll.vhd
+Z73 8D:/FPGAProjects/CameraT9/pll.vhd
+Z74 FD:/FPGAProjects/CameraT9/pll.vhd
 l0
 L43
 V4fTW<jLQQ?GeD^_`HjRaY3
 !s100 I>2>QkW:F3U3H]^dHaTUX2
 R7
 32
-R52
+R68
 !i10b 1
-R53
-Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/pll.vhd|
-Z60 !s107 D:/FPGAProjects/CameraT9/pll.vhd|
+R69
+Z75 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/pll.vhd|
+Z76 !s107 D:/FPGAProjects/CameraT9/pll.vhd|
 !i113 1
 R12
 R13
@@ -389,33 +473,33 @@ VA`4>YeEeo2JRlT:M:2YFV2
 !s100 =GbWK27JGC7bS=lbKV_[V2
 R7
 32
-R52
+R68
 !i10b 1
-R53
-R59
-R60
+R69
+R75
+R76
 !i113 1
 R12
 R13
 Ersthandler
-Z61 w1462379534
+Z77 w1462379534
 R3
 R2
 R1
 R4
-Z62 8D:/FPGAProjects/CameraT9/rsthandler.vhd
-Z63 FD:/FPGAProjects/CameraT9/rsthandler.vhd
+Z78 8D:/FPGAProjects/CameraT9/rsthandler.vhd
+Z79 FD:/FPGAProjects/CameraT9/rsthandler.vhd
 l0
 L5
 V^2i2il>DEX3Ce@XA9[IBg3
 !s100 FD<L5W3kA>=5H4AKMVeYP2
 R7
 32
-R52
+R68
 !i10b 1
-R53
-Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/rsthandler.vhd|
-Z65 !s107 D:/FPGAProjects/CameraT9/rsthandler.vhd|
+R69
+Z80 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/rsthandler.vhd|
+Z81 !s107 D:/FPGAProjects/CameraT9/rsthandler.vhd|
 !i113 1
 R12
 R13
@@ -430,33 +514,33 @@ VTGm_nZiTb2PWiHnW99WE32
 !s100 [zHd3C?8fOV>FKieVi7g91
 R7
 32
-R52
+R68
 !i10b 1
-R53
-R64
-R65
+R69
+R80
+R81
 !i113 1
 R12
 R13
 Escb
-Z66 w1462381716
+Z82 w1462381716
 R3
 R2
 R1
 R4
-Z67 8D:/FPGAProjects/CameraT9/scb.vhd
-Z68 FD:/FPGAProjects/CameraT9/scb.vhd
+Z83 8D:/FPGAProjects/CameraT9/scb.vhd
+Z84 FD:/FPGAProjects/CameraT9/scb.vhd
 l0
 L5
 VnYRCgQM]kE1ZWC1TQNFS[2
 !s100 A6KTZGc6kGiI7elI<H`U>1
 R7
 32
-R52
+R68
 !i10b 1
-R53
-Z69 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/scb.vhd|
-Z70 !s107 D:/FPGAProjects/CameraT9/scb.vhd|
+R69
+Z85 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/scb.vhd|
+Z86 !s107 D:/FPGAProjects/CameraT9/scb.vhd|
 !i113 1
 R12
 R13
@@ -471,33 +555,33 @@ V1eG7f?T36hZITiTXJ205:0
 !s100 QnCdb=zo920V75U0Y3S7@2
 R7
 32
-R52
+R68
 !i10b 1
-R53
 R69
-R70
+R85
+R86
 !i113 1
 R12
 R13
 Escbctrl
-Z71 w1495491629
+Z87 w1495491629
 R3
 R2
 R1
 R4
-Z72 8D:/FPGAProjects/CameraT9/scbctrl.vhd
-Z73 FD:/FPGAProjects/CameraT9/scbctrl.vhd
+Z88 8D:/FPGAProjects/CameraT9/scbctrl.vhd
+Z89 FD:/FPGAProjects/CameraT9/scbctrl.vhd
 l0
 L5
 V<K_lzN55o2V[e]Gc`abGg3
 !s100 hLRi=U`zBA@P<2`Eoj_;B3
 R7
 32
-R52
+R68
 !i10b 1
-R53
-Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/scbctrl.vhd|
-Z75 !s107 D:/FPGAProjects/CameraT9/scbctrl.vhd|
+R69
+Z90 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/scbctrl.vhd|
+Z91 !s107 D:/FPGAProjects/CameraT9/scbctrl.vhd|
 !i113 1
 R12
 R13
@@ -512,33 +596,33 @@ V2ZecMVC@L5gg=1I5=eAJ`2
 !s100 UhlXHSaTfTMLF?E8MQ4m:0
 R7
 32
-R52
+R68
 !i10b 1
-R53
-R74
-R75
+R69
+R90
+R91
 !i113 1
 R12
 R13
 Escbmodule
-Z76 w1495622830
+Z92 w1495644781
 R1
 R2
 R3
 R4
-Z77 8D:/FPGAProjects/CameraT9/scbmodule.vhd
-Z78 FD:/FPGAProjects/CameraT9/scbmodule.vhd
+Z93 8D:/FPGAProjects/CameraT9/scbmodule.vhd
+Z94 FD:/FPGAProjects/CameraT9/scbmodule.vhd
 l0
 L5
 VFZ[]lTKV99OmeS5cDMO@l0
 !s100 n3SQEEmcE[cAdf3@nKaRH1
 R7
 32
-R52
+R68
 !i10b 1
-R53
-Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/scbmodule.vhd|
-Z80 !s107 D:/FPGAProjects/CameraT9/scbmodule.vhd|
+R69
+Z95 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/scbmodule.vhd|
+Z96 !s107 D:/FPGAProjects/CameraT9/scbmodule.vhd|
 !i113 1
 R12
 R13
@@ -547,39 +631,39 @@ R1
 R2
 R3
 DEx4 work 9 scbmodule 0 22 FZ[]lTKV99OmeS5cDMO@l0
-l106
+l75
 L15
-V?_CQIGz6cBPHYSlC_Ph@J1
-!s100 Sa[9SCHgX?WMK__9kUIS93
+VI72n>DXQKa3UKQ@@]B^`a2
+!s100 J1gW[Yh:gEzOkB3?UZ2I[2
 R7
 32
-R52
+R68
 !i10b 1
-R53
-R79
-R80
+R69
+R95
+R96
 !i113 1
 R12
 R13
 Escbtb
-Z81 w1495547224
+Z97 w1495547224
 R1
 R2
 R3
 R4
-Z82 8D:/FPGAProjects/CameraT9/scbtb.vhd
-Z83 FD:/FPGAProjects/CameraT9/scbtb.vhd
+Z98 8D:/FPGAProjects/CameraT9/scbtb.vhd
+Z99 FD:/FPGAProjects/CameraT9/scbtb.vhd
 l0
 L5
 Vbk:V<m]@H<UoHY?^_T=<m0
 !s100 _3nEL7l2<ADlHzHIl389I3
 R7
 32
-Z84 !s110 1495643731
+Z100 !s110 1495849992
 !i10b 1
-R53
-Z85 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/scbtb.vhd|
-Z86 !s107 D:/FPGAProjects/CameraT9/scbtb.vhd|
+R69
+Z101 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/scbtb.vhd|
+Z102 !s107 D:/FPGAProjects/CameraT9/scbtb.vhd|
 !i113 1
 R12
 R13
@@ -594,34 +678,34 @@ VdA?EZ?ZL5h5BkQFWNZOzD1
 !s100 Fb?[3ANQJ1T6Ge`ga`OBh2
 R7
 32
-R84
+R100
 !i10b 1
-R53
-R85
-R86
+R69
+R101
+R102
 !i113 1
 R12
 R13
 Esccb
-Z87 w1495643726
+Z103 w1495645000
 R15
 R1
 R2
 R3
 R4
-Z88 8D:/FPGAProjects/CameraT9/sccb.vhd
-Z89 FD:/FPGAProjects/CameraT9/sccb.vhd
+Z104 8D:/FPGAProjects/CameraT9/sccb.vhd
+Z105 FD:/FPGAProjects/CameraT9/sccb.vhd
 l0
 L6
 VGUjL?:UD=JNg>^QVB2BHB1
 !s100 dRl`bONRb<EhMZbIT_hcR1
 R7
 32
-R84
+R100
 !i10b 1
-Z90 !s108 1495643731.000000
-Z91 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/sccb.vhd|
-Z92 !s107 D:/FPGAProjects/CameraT9/sccb.vhd|
+Z106 !s108 1495849992.000000
+Z107 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/sccb.vhd|
+Z108 !s107 D:/FPGAProjects/CameraT9/sccb.vhd|
 !i113 1
 R12
 R13
@@ -633,37 +717,37 @@ R3
 DEx4 work 4 sccb 0 22 GUjL?:UD=JNg>^QVB2BHB1
 l53
 L26
-VILb_L1S<^^NAJ9JE[BXWL0
-!s100 4W7`LYBJ<[h[]Pi3EO^960
+VaejeifnF2Q:3P6UKI8?n@1
+!s100 mFcW8SEb37dmbINF?NzP[2
 R7
 32
-R84
+R100
 !i10b 1
-R90
-R91
-R92
+R106
+R107
+R108
 !i113 1
 R12
 R13
 Esdram
-Z93 w1495310249
+Z109 w1495310249
 R1
 R2
 R3
 R4
-Z94 8D:/FPGAProjects/CameraT9/sdram.vhd
-Z95 FD:/FPGAProjects/CameraT9/sdram.vhd
+Z110 8D:/FPGAProjects/CameraT9/sdram.vhd
+Z111 FD:/FPGAProjects/CameraT9/sdram.vhd
 l0
 L5
 VjTH<UKD]a456EOK_M3nLQ0
 !s100 U=^FBn8bgAc>d2zjb21cc3
 R7
 32
-R84
+R100
 !i10b 1
-R90
-Z96 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/sdram.vhd|
-Z97 !s107 D:/FPGAProjects/CameraT9/sdram.vhd|
+R106
+Z112 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/sdram.vhd|
+Z113 !s107 D:/FPGAProjects/CameraT9/sdram.vhd|
 !i113 1
 R12
 R13
@@ -678,33 +762,33 @@ Vh8DKFmM=]_01D1QcFXAd92
 !s100 0A9G?n63DBkRX=dV<_fk42
 R7
 32
-R84
+R100
 !i10b 1
-R90
-R96
-R97
+R106
+R112
+R113
 !i113 1
 R12
 R13
 Esdramctrl
-Z98 w1495577814
+Z114 w1495577814
 R1
 R2
 R3
 R4
-Z99 8D:/FPGAProjects/CameraT9/sdramctrl.vhd
-Z100 FD:/FPGAProjects/CameraT9/sdramctrl.vhd
+Z115 8D:/FPGAProjects/CameraT9/sdramctrl.vhd
+Z116 FD:/FPGAProjects/CameraT9/sdramctrl.vhd
 l0
 L5
 VUeQB:R5mUFYTJmMT81:071
 !s100 8VfY[ALIKFYIBz1LVIR`D3
 R7
 32
-R84
+R100
 !i10b 1
-R90
-Z101 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/sdramctrl.vhd|
-Z102 !s107 D:/FPGAProjects/CameraT9/sdramctrl.vhd|
+R106
+Z117 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/sdramctrl.vhd|
+Z118 !s107 D:/FPGAProjects/CameraT9/sdramctrl.vhd|
 !i113 1
 R12
 R13
@@ -719,33 +803,33 @@ VZ2@[7H4<oWB0Rg7hPlWWI0
 !s100 KM4kXb]SekONZU:2g<cKQ3
 R7
 32
-R84
+R100
 !i10b 1
-R90
-R101
-R102
+R106
+R117
+R118
 !i113 1
 R12
 R13
 Etb
-Z103 w1495482840
+Z119 w1495482840
 R1
 R2
 R3
 R4
-Z104 8D:/FPGAProjects/CameraT9/tb.vhd
-Z105 FD:/FPGAProjects/CameraT9/tb.vhd
+Z120 8D:/FPGAProjects/CameraT9/tb.vhd
+Z121 FD:/FPGAProjects/CameraT9/tb.vhd
 l0
 L5
 VgdoJ`X3H`_5TYJLkbQVCl2
 !s100 D]aa?bIU7DPKkaDgZgAED1
 R7
 32
-R84
+R100
 !i10b 1
-R90
-Z106 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/tb.vhd|
-Z107 !s107 D:/FPGAProjects/CameraT9/tb.vhd|
+R106
+Z122 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/tb.vhd|
+Z123 !s107 D:/FPGAProjects/CameraT9/tb.vhd|
 !i113 1
 R12
 R13
@@ -760,33 +844,33 @@ V8z515UbgcjK71BKBUPf8M2
 !s100 =Sd7ok3`4f:_GjVWE7<hf2
 R7
 32
-R84
+R100
 !i10b 1
-R90
 R106
-R107
+R122
+R123
 !i113 1
 R12
 R13
 Etop
-Z108 w1495626884
+Z124 w1495626884
 R1
 R2
 R3
 R4
-Z109 8D:/FPGAProjects/CameraT9/top.vhd
-Z110 FD:/FPGAProjects/CameraT9/top.vhd
+Z125 8D:/FPGAProjects/CameraT9/top.vhd
+Z126 FD:/FPGAProjects/CameraT9/top.vhd
 l0
 L5
 V;^<P53WSWmd>YXhe1I=b63
 !s100 LCoY<mijMK[S>?CgRSS`C1
 R7
 32
-R84
+R100
 !i10b 1
-R90
-Z111 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/top.vhd|
-Z112 !s107 D:/FPGAProjects/CameraT9/top.vhd|
+R106
+Z127 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/top.vhd|
+Z128 !s107 D:/FPGAProjects/CameraT9/top.vhd|
 !i113 1
 R12
 R13
@@ -801,34 +885,34 @@ V[=cMQdk9?If;^5AkzVCfe2
 !s100 HYeSKVC8WgJ2ILSHZYF@>2
 R7
 32
-R84
+R100
 !i10b 1
-R90
-R111
-R112
+R106
+R127
+R128
 !i113 1
 R12
 R13
 Euart2
-Z113 w1494855115
+Z129 w1494855115
 R15
 R1
 R2
 R3
 R4
-Z114 8D:/FPGAProjects/CameraT9/uart2.vhd
-Z115 FD:/FPGAProjects/CameraT9/uart2.vhd
+Z130 8D:/FPGAProjects/CameraT9/uart2.vhd
+Z131 FD:/FPGAProjects/CameraT9/uart2.vhd
 l0
 L6
 V6dbFcN?BM[=[K>UO;GVeY2
 !s100 `mU;i?3]EIU]9S^XID7CN1
 R7
 32
-R84
+Z132 !s110 1495849993
 !i10b 1
-R90
-Z116 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/uart2.vhd|
-Z117 !s107 D:/FPGAProjects/CameraT9/uart2.vhd|
+R106
+Z133 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/uart2.vhd|
+Z134 !s107 D:/FPGAProjects/CameraT9/uart2.vhd|
 !i113 1
 R12
 R13
@@ -837,29 +921,29 @@ R15
 R1
 R2
 R3
-Z118 DEx4 work 5 uart2 0 22 6dbFcN?BM[=[K>UO;GVeY2
+DEx4 work 5 uart2 0 22 6dbFcN?BM[=[K>UO;GVeY2
 l48
 L28
-Z119 V5oM_l[8aVgCfjz6;>?8mo0
-Z120 !s100 O_kbH:^NfjTPPT2J?k@c53
+V5oM_l[8aVgCfjz6;>?8mo0
+!s100 O_kbH:^NfjTPPT2J?k@c53
 R7
 32
-R84
+R132
 !i10b 1
-R90
-R116
-R117
+R106
+R133
+R134
 !i113 1
 R12
 R13
 Euarthandler
-Z121 w1495624258
+Z135 w1495652353
 R1
 R2
 R3
 R4
-Z122 8D:/FPGAProjects/CameraT9/uarthandler.vhd
-Z123 FD:/FPGAProjects/CameraT9/uarthandler.vhd
+Z136 8D:/FPGAProjects/CameraT9/uarthandler.vhd
+Z137 FD:/FPGAProjects/CameraT9/uarthandler.vhd
 l0
 L5
 V0Md4_jK`Gmh7Kj=TN[Idh0
@@ -869,8 +953,8 @@ R7
 R8
 !i10b 1
 R9
-Z124 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/uarthandler.vhd|
-Z125 !s107 D:/FPGAProjects/CameraT9/uarthandler.vhd|
+Z138 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/FPGAProjects/CameraT9/uarthandler.vhd|
+Z139 !s107 D:/FPGAProjects/CameraT9/uarthandler.vhd|
 !i113 1
 R12
 R13
@@ -879,17 +963,17 @@ R1
 R2
 R3
 DEx4 work 11 uarthandler 0 22 0Md4_jK`Gmh7Kj=TN[Idh0
-l57
+l56
 L19
-V4=hOW>mNAfoa2]A0d[[?71
-!s100 _ZOdTd:?c=hL[b>h]HF?a1
+V`m6z40M@W6W;NO?_`RnS_1
+!s100 ?:IGEW<Dbn8=]J1MT;De31
 R7
 32
 R8
 !i10b 1
 R9
-R124
-R125
+R138
+R139
 !i113 1
 R12
 R13

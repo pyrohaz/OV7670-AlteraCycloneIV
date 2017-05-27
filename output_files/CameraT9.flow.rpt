@@ -1,5 +1,5 @@
 Flow report for CameraT9
-Wed May 24 20:00:06 2017
+Sat May 27 03:33:38 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed May 24 19:59:59 2017       ;
+; Flow Status                        ; Successful - Sat May 27 03:33:33 2017       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; CameraT9                                    ;
 ; Top-level Entity Name              ; top                                         ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/24/2017 19:59:20 ;
+; Start date & time ; 05/27/2017 03:33:02 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CameraT9            ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 242211440538252.149565235911552        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 242211440538252.149585238219872        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; MISC_FILE                           ; pixfifo.cmp                            ; --            ; --          ; --         ;
@@ -101,11 +101,11 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:22     ; 1.0                     ; 685 MB              ; 00:00:34                           ;
-; Fitter                    ; 00:00:09     ; 1.1                     ; 1306 MB             ; 00:00:10                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 551 MB              ; 00:00:01                           ;
+; Analysis & Synthesis      ; 00:00:19     ; 1.0                     ; 705 MB              ; 00:00:33                           ;
+; Fitter                    ; 00:00:09     ; 1.1                     ; 1303 MB             ; 00:00:10                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 549 MB              ; 00:00:01                           ;
 ; TimeQuest Timing Analyzer ; 00:00:04     ; 1.1                     ; 632 MB              ; 00:00:03                           ;
-; Total                     ; 00:00:36     ; --                      ; --                  ; 00:00:48                           ;
+; Total                     ; 00:00:33     ; --                      ; --                  ; 00:00:47                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
